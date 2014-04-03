@@ -1,0 +1,17 @@
+{
+  "name": "PragmaVision",
+  "version": "0.0.0",
+  "authors": [
+    "Anatol Manoila <anatol.manoila@gmail.com>"
+  ],
+  "description": "Extreme tech training",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "toastr": "~2.0.1",
+    "angular": "~1.2.15",
+    "angular-resource": "~1.2.15",
+    "angular-route": "~1.2.15"
+  }
+}
