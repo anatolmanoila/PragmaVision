@@ -26,7 +26,12 @@ app.configure(function() {
     app.use(express.static(__dirname + '/public'));
 });
 
-mongoose.connect('mongodb://localhost/pragmavision');
+if(env == 'development'){
+    mongoose.connect('mongodb://localhost/pragmavision');
+} else {
+    mongoose.connect('mongodb://anatolm:pragmavisiondb@ds045637.mongolab.com:45637/pragmavision');
+}
+    
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error...'));
 db.once('open', function callback() {
